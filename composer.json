@@ -1,0 +1,22 @@
+{
+    "name": "jandersongarcia/mobControl",
+    "description": "Dashboard MOB",
+    "keywords": ["mob", "dashboard", "painel de controle", "instalador"],
+    "version": "1.0.0",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Janderson Garcia",
+            "email": "jganjos.info@gmail.com",
+            "role": "creator and developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "post-install-cmd": [
+
+        ]
+    }
+}
