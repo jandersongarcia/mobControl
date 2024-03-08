@@ -3,7 +3,7 @@
     "description": "Dashboard MOB",
     "keywords": ["mob", "dashboard", "painel de controle", "instalador"],
     "version": "1.0.0",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -12,11 +12,14 @@
             "role": "creator and developer"
         }
     ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "jandersongarcia\\mobcontrol\\": "src/"
+        }
+    },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "scripts": {
-        "post-install-cmd": [
-
-        ]
-    }
+    "prefer-stable": true
 }
