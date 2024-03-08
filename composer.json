@@ -20,6 +20,11 @@
             "jandersongarcia\\mobcontrol\\": "src/"
         }
     },
+    "scripts": {
+        "post-install-cmd": [
+            "jandersongarcia\\mobcontrol\\Installer::run"
+        ]
+    },
     "minimum-stability": "stable",
     "prefer-stable": true
 }
