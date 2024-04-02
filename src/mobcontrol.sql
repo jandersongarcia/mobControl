@@ -14,7 +14,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Copiando estrutura para tabela eldorado.mb_user_account
+-- Copiando estrutura para tabela mob.mb_user_account
 DROP TABLE IF EXISTS `mb_user_account`;
 CREATE TABLE IF NOT EXISTS `mb_user_account` (
   `SEQ_ID` int(11) NOT NULL AUTO_INCREMENT,
@@ -36,11 +36,11 @@ CREATE TABLE IF NOT EXISTS `mb_user_account` (
   CONSTRAINT `FK_mb_user_account_mb_user_type` FOREIGN KEY (`TYPE_USER`) REFERENCES `mb_user_type` (`SEQ_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela eldorado.mb_user_account: ~1 rows (aproximadamente)
+-- Copiando dados para a tabela mob.mb_user_account: ~1 rows (aproximadamente)
 INSERT INTO `mb_user_account` (`SEQ_ID`, `NAME`, `SURNAME`, `EMAIL`, `USERNAME`, `PASSWORD`, `BIRTH`, `AVATAR`, `RECOVER_PASS`, `RECOVER_VALIDATE`, `CHANGE_PASSWORD`, `TYPE_USER`, `STATUS`, `CREATED_AT`) VALUES
-	(1, 'Administrator', '', 'user@mob.com', 'master.admin', '$2y$10$m9ZqhL7Ms7lJ851TshliyuPX/FrQjAqlJmMiAEXOWszDNMp3N.99m', NULL, NULL, NULL, NULL, 0, 1, 0, '2024-01-28 01:27:08');
+	(1, 'Administrator', '', 'user@mob.com', 'master.admin', '$2y$10$m9ZqhL7Ms7lJ851TshliyuPX/FrQjAqlJmMiAEXOWszDNMp3N.99m', NULL, NULL, NULL, NULL, 0, 1, 0, '2024-01-28 05:27:08');
 
--- Copiando estrutura para tabela eldorado.mb_user_logs
+-- Copiando estrutura para tabela mob.mb_user_logs
 DROP TABLE IF EXISTS `mb_user_logs`;
 CREATE TABLE IF NOT EXISTS `mb_user_logs` (
   `SEQ_ID` int(11) NOT NULL AUTO_INCREMENT,
@@ -53,9 +53,9 @@ CREATE TABLE IF NOT EXISTS `mb_user_logs` (
   PRIMARY KEY (`SEQ_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela eldorado.mb_user_logs: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela mob.mb_user_logs: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela eldorado.mb_user_type
+-- Copiando estrutura para tabela mob.mb_user_type
 DROP TABLE IF EXISTS `mb_user_type`;
 CREATE TABLE IF NOT EXISTS `mb_user_type` (
   `SEQ_ID` int(11) NOT NULL AUTO_INCREMENT,
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `mb_user_type` (
   PRIMARY KEY (`SEQ_ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela eldorado.mb_user_type: ~4 rows (aproximadamente)
+-- Copiando dados para a tabela mob.mb_user_type: ~4 rows (aproximadamente)
 INSERT INTO `mb_user_type` (`SEQ_ID`, `NAME`, `CATEGORY`, `SITUATION`) VALUES
 	(1, 'Administrator', 'admin', 1),
 	(2, 'User', 'user', 1),
